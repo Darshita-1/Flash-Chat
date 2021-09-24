@@ -117,8 +117,8 @@ class MessagesStream extends StatelessWidget {
             final currentUser = loggedInUser.email;
 
             final messageBubble = MessageBubble(
-              sender: messageSender.toString(),
-              text: messageText.toString(),
+              sender: messageSender,
+              text: messageText,
               isMe: currentUser == messageSender,
             );
 
